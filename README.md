@@ -3,7 +3,7 @@
 **RESULTS**
 We achieve a 60% accuracy on finding the right position of the clivage site on eucaryotes proteine with statistical_model.py. We find that the optimal neighborhood to consider with following notations is $p = 13$ and $q = 2$ : the $13$ amino acids before and the $2$ amino acids after the clivage site are the better indicators of a clivage site.
 
-** DATA **
+**DATA**
 Each entry in these files consists in exactly three lines. This is an example of a protein description:
 
 55 2SS8 HELAN 25 ALBUMIN 8 PRECURSOR (METHIONINE-RICH 2S PROTEIN) (SFA8).
@@ -11,7 +11,7 @@ MARFSIVFAAAGVLLLVAMAPVSEASTTTIITTIIEENPYGRGRTESGCYQQMEE
 SSSSSSSSSSSSSSSSSSSSSSSSSCMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
 
 - The first line gives a description of the protein and its content may be ignored.
-- The second line gives the beginning of the primary structure of the protein, with letters encoding the amino acids. Note that the rst amino acid is almost always M
+- The second line gives the beginning of the primary structure of the protein, with letters encoding the amino acids. Note that the first amino acid is almost always M
 (methionine), as it corresponds to the start codon.
 - The third line is an annotation corresponding to the localization of the cleavage site. For each amino acid on the previous line, a letter indicates whether this amino acid belongs to the signal peptide (annotated with a letter S) or to the mature protein (annotated with a letter M). The first amino acid of the mature protein is annotated with a letter C.
 
