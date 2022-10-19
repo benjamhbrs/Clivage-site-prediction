@@ -17,6 +17,6 @@ In a same way, by counting over the whole length of given sequences, one can com
 
 These frequencies will be used as estimated probabilities to compute the probability of a given word to be located at a cleavage site, under an independent model. We rather use the logarithm of probabilities to go on additive calculations. 
 
-Then, $\forall a \in A, \forall i \in [-p; ...; q-1]$ we define $s(a, i) = log(f(a, i)) - log(g(a))$. Also, as zero counts may occur, pseudo-counts [3] must be used. Finally, for any word $w = a_{0}a_{1}...a_{p+q-1}$ the $q-1$ score defined as $\sum\limits_{i=-p}^{q-1} s(a_{p+i},i)$ may tell whether $w$ is the neighborhood of a cleavage site or not.
+Then, $\forall a \in A, \forall i \in [-p; ...; q-1]$ we define $s(a, i) = log(f(a, i)) - log(g(a))$. Also, as zero counts may occur, we use additive smoothing. Finally, for any word $w = a_{0}a_{1}...a_{p+q-1}$ the $q-1$ score defined as $\sum\limits_{i=-p}^{q-1} s(a_{p+i},i)$ may tell whether $w$ is the neighborhood of a cleavage site or not.
 
 Then we tune a threshold to define a binary classifier.
