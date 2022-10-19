@@ -11,7 +11,7 @@ SSSSSSSSSSSSSSSSSSSSSSSSSCMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
 (methionine), as it corresponds to the start codon.
 - The third line is an annotation corresponding to the localization of the cleavage site. For each amino acid on the previous line, a letter indicates whether this amino acid belongs to the signal peptide (annotated with a letter S) or to the mature protein (annotated with a letter M). The first amino acid of the mature protein is annotated with a letter C.
 
-Over a set of N sequences, with a known cleavage site for each, one can first count $c(a,i)$ the number of occurrences of each amino acid $a \in A$, at every position $i \in [-p; ...; q-1] $, relative to the corresponding cleavage site. Then, for each a and i, let define $f(a, i) = c(a, i)/N$, the observed frequency of amino acid a at the relative position $i$. 
+Over a set of N sequences, with a known cleavage site for each, we first count $c(a,i)$ the number of occurrences of each amino acid $a \in A$, at every position $i \in [-p; ...; q-1] $, relative to the corresponding cleavage site. Then, for each a and i, let define $f(a, i) = c(a, i)/N$, the observed frequency of amino acid a at the relative position $i$. 
 
 In a same way, by counting over the whole length of given sequences, one can compute the observed general background frequency $g(a$) of amino acid a in the given set, regardless of the position $i$. However, it must be noticed that the very first amino acid at the beginning of a sequence is almost always an $M$, because it corresponds to the transcription of the start codon. Also, one will not count letters on this first position to avoid a bias. 
 
